@@ -13,7 +13,6 @@ header h1{
     text-align: left;
 }
 
-/* menu */
 .menu_hor{
     list-style-type: none;
     margin: 0px;
@@ -37,14 +36,14 @@ header h1{
 body{
     background-color: rgb(195, 183, 183);
 }
-.container {
+#container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: auto auto; 
     gap: 20px; 
 }
 figure {
-    margin: 0; 
+    margin: 0px; 
 }
 img {
     width: 150px;
