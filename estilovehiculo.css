@@ -1,0 +1,43 @@
+header{
+    background-color: gray;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+header h1{
+    margin: 0px;
+    padding: 10px;
+    font-size: 250%;
+    text-align: left;
+}
+
+/* menu */
+.menu_hor{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.menu_hor li{
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    float: left;
+    border-right: 1px solid black;
+    text-decoration: none;
+}
+
+.menu_hor li:last-child{
+    border-right:none;
+}
+body{
+    background-color: rgb(195, 183, 183);
+}
+
+#di2{
+    float:right;
+}
