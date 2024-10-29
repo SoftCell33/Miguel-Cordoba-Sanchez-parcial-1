@@ -1,0 +1,30 @@
+<div class="class-form">
+    <form [formGroup]="classForm" (ngSubmit)="save()">
+      <div>
+        <label for="name">Nombre de la Asignatura</label>
+        <input id="name" formControlName="name" type="text" />
+      </div>
+  
+      <div>
+        <label for="description">Descripción</label>
+        <input id="description" formControlName="description" type="text" />
+      </div>
+  
+      <div>
+        <label for="room">Salón</label>
+        <input id="room" formControlName="room" type="text" />
+      </div>
+  
+      <div>
+        <label for="schedule">Horario</label>
+        <input id="schedule" formControlName="schedule" type="text" />
+      </div>
+  
+      <div>
+        <label for="teacherId">ID del Docente</label>
+        <input id="teacherId" formControlName="teacherId" type="number" />
+      </div>
+  
+      <button type="submit" [disabled]="classForm.invalid">Guardar Clase</button>
+    </form>
+  </div>

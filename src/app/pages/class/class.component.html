@@ -1,0 +1,14 @@
+<div class="class-container">
+    <h2>Clases</h2>
+    <button (click)="createClass()">Agregar Clase</button>
+  
+    <ul>
+        <li *ngFor="let class of classes">
+            {{ class.name }} - {{ class.schedule }}
+            <button (click)="editClass(class)">Editar</button>
+            <button (click)="deleteClass(class.id)">Eliminar</button> 
+        </li>
+    </ul>
+  
+    <app-classform [class]="selectedClass" (saved)="loadClasses()"></app-classform>
+  </div>
